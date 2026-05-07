@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+.codex
+.agents/
+.cache/
+
+# Generated pipeline outputs and local datasets
+pipeline_output/
+images/
+unseen_images/
+yolo_dataset/
+
+# YOLO training/inference artifacts. Keep only the trained weights used by the pipeline.
+runs/**
+!runs/
+!runs/detect/
+!runs/detect/train-main/
+!runs/detect/train-main/weights/
+!runs/detect/train-main/weights/best.pt
+!runs/detect/train-main/weights/last.pt
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
